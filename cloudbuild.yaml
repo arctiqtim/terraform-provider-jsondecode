@@ -1,0 +1,11 @@
+steps:
+- name: 'gcr.io/cloud-builders/go'
+  args: ['install', '.']
+  env: ['PROJECT_ROOT=github.com/arctiqtim/terraform-provider-jsondecode']
+- name: 'gcr.io/cloud-builders/go'
+  args: ['build', '.']
+  env: ['PROJECT_ROOT=github.com/arctiqtim/terraform-provider-jsondecode']
+artifacts:
+  objects:
+    location: 'gs://controlstation1-artifacts/'
+    paths: ['terraform-provider-jsondecode']
