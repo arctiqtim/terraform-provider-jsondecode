@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/EvilSuperstars/terraform-provider-jsondecode/decode"
+	"github.com/arctiqtim/terraform-provider-jsondecode/decode"
 	"github.com/hashicorp/terraform/plugin"
 )
 
